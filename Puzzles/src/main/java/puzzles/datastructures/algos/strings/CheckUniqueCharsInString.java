@@ -17,7 +17,10 @@ public class CheckUniqueCharsInString {
         long _128To191 = 0;
         long _192To255 = 0;
 
-        for (int i = 0; i < str.length(); ++i) {
+        int length = str.length();
+        if (length >= 256)
+            return false;
+        for (int i = 0; i < length; ++i) {
             int val = str.charAt(i);
             if (val < 64) {
                 if ((_0To63 & (1 << val)) != 0) {
