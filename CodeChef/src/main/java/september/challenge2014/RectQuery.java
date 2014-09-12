@@ -56,12 +56,11 @@ public class RectQuery {
     }
 
     public static void main(String[] args) throws IOException {
-
-//        BufferedReader bufferRead = new BufferedReader(new InputStreamReader(
-//                System.in));
-         BufferedReader bufferRead = new BufferedReader(new InputStreamReader(
-         new FileInputStream(new
-         File("src/main/resources/rectanglequery/input.txt"))));
+        // BufferedReader bufferRead = new BufferedReader(new InputStreamReader(
+        // System.in));
+        BufferedReader bufferRead = new BufferedReader(new InputStreamReader(
+                new FileInputStream(new
+                        File("src/main/resources/rectanglequery/input.txt"))));
         int n = Integer.parseInt(bufferRead.readLine());
         Map<Integer, Rectangle> points = new HashMap<Integer, RectQuery.Rectangle>();
         for (int i = 0; i < n; ++i) {
@@ -83,11 +82,9 @@ public class RectQuery {
                 }
                 System.out.println(counter);
             }
-            // System.out.println(points);
         }
         logMemory();
         bufferRead.close();
-
     }
 
     private static Rectangle getRectangle(String[] splits) {
