@@ -1,4 +1,4 @@
-package classic.algo;
+package puzzles.classic;
 
 import java.util.Stack;
 
